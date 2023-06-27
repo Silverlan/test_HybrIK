@@ -31,6 +31,11 @@ jobs:
             generators: "Unix Makefiles"
             build_dir: 'build'
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+          
       - uses: conda-incubator/setup-miniconda@v2
         with:
           miniconda-version: "latest"
