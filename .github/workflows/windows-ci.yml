@@ -44,6 +44,7 @@ jobs:
       - name: Build HybrIK
         shell: bash
         run: |
+          conda init bash
           # 1. Create a conda virtual environment.
           conda create -n hybrik python=3.8 -y
           conda activate hybrik
