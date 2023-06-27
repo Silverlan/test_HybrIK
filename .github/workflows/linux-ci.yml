@@ -35,12 +35,13 @@ jobs:
         with:
           miniconda-version: "latest"
           activate-environment: hybrik
+          python-version: 3.8
 
       - name: Build HybrIK
         shell: bash
         run: |
           # 1. Create a conda virtual environment.
-          conda create -n hybrik python=3.8 -y
+          # conda create -n hybrik python=3.8 -y
           # conda activate hybrik
 
           # 2. Install PyTorch
