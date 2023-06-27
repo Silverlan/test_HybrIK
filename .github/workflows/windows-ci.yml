@@ -35,16 +35,11 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           miniconda-version: "latest"
-
-      - name: Init Shell
-        shell: bash
-        run: |
-          conda init bash
+          activate-environment: hybrik
 
       - name: Build HybrIK
         shell: bash
         run: |
-          conda init bash
           # 1. Create a conda virtual environment.
           conda create -n hybrik python=3.8 -y
           conda activate hybrik
