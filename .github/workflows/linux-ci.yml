@@ -41,7 +41,7 @@ jobs:
         run: |
           # 1. Create a conda virtual environment.
           conda create -n hybrik python=3.8 -y
-          conda activate hybrik
+          # conda activate hybrik
 
           # 2. Install PyTorch
           conda install pytorch==1.9.1 torchvision==0.10.1 -c pytorch
