@@ -39,5 +39,5 @@ jobs:
           
       - name: Get Python executable location
         run: |
-          python_executable=$(which python3.9)
-          echo "Python executable location: $python_executable"
+          $pythonExecutable = where.exe python
+          echo "Python executable location: $pythonExecutable"
