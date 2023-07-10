@@ -39,5 +39,5 @@ jobs:
           
       - name: Get Python executable location
         run: |
-          $pythonExecutable = where.exe python
-          echo "Python executable location: $pythonExecutable"
+          $pythonExecutable = (where.exe python).Split()[0]
+          echo "::set-output name=python_location::$pythonExecutable"
