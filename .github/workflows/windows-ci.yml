@@ -33,11 +33,10 @@ jobs:
             build_dir: 'build'
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+      #- uses: actions/setup-python@v4
+      #  with:
+      #    python-version: '3.9'
           
       - name: Get Python executable location
         run: |
-          $pythonExecutable = (where.exe python).Split()[0]
-          echo "::set-output name=python_location::$pythonExecutable"
+          bazel --version
