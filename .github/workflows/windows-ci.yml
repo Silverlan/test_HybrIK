@@ -40,3 +40,4 @@ jobs:
       - name: Get Python executable location
         run: |
           bazel --version
+          bazel build
