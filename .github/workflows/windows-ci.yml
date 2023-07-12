@@ -42,8 +42,8 @@ jobs:
           curl -LO https://github.com/redsun82/bazel/releases/download/vs-2022-fix-0.1/bazel-vs2022.exe
           .\bazel-vs2022.exe --version
           mv bazel-vs2022.exe bazel.exe
-          echo "::add-path::$(pwd)"
-          echo "::add-path::$(pwd)\bazel.exe"
+          echo "$(pwd)" >> $GITHUB_PATH
+          echo "$(pwd)\bazel.exe" >> $GITHUB_PATH
           mkdir test
           cd test
           bazel --version
