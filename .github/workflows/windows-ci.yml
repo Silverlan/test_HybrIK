@@ -39,7 +39,7 @@ jobs:
           
       - name: Get Python executable location
         run: |
-          git clone https://github.com/redsun82/bazel.git
-          cd bazel
-          bazel build //src:bazel-dev.exe
+          curl -LO https://github.com/redsun82/bazel/releases/download/vs-2022-fix-0.1/bazel-vs2022.exe
+          # Install Bazel
+          .\bazel-vs2022.exe /S
         
