@@ -45,7 +45,7 @@ jobs:
           echo "$(pwd)" >> $GITHUB_PATH
           echo "$(pwd)\bazel.exe" >> $GITHUB_PATH
           
-      - name: Get Python executable location2
+      - name: Get Python executable location22
         run: |
           mkdir test
           cd test
