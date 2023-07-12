@@ -47,6 +47,7 @@ jobs:
           
       - name: B
         run: |
+          bazel --version
           mkdir test
           cd test
           bazel --version
