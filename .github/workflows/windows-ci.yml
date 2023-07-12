@@ -37,7 +37,7 @@ jobs:
       #  with:
       #    python-version: '3.9'
           
-      - name: Get Python executable location
+      - name: A
         run: |
           curl -LO https://github.com/redsun82/bazel/releases/download/vs-2022-fix-0.1/bazel-vs2022.exe
           .\bazel-vs2022.exe --version
@@ -45,7 +45,7 @@ jobs:
           echo "$(pwd)" >> $GITHUB_PATH
           echo "$(pwd)\bazel.exe" >> $GITHUB_PATH
           
-      - name: Get Python executable location22
+      - name: B
         run: |
           mkdir test
           cd test
