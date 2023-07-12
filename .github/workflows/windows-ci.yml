@@ -39,14 +39,7 @@ jobs:
           
       - name: Get Python executable location
         run: |
-          #git clone https://github.com/bazelbuild/examples
-          #bazel --version
-          
           git clone https://github.com/redsun82/bazel.git
           cd bazel
           bazel build //src:bazel-dev.exe
-          
-          #cd examples
-          #cd cpp-tutorial/stage1
-          #export BAZEL_VC="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC"
-          #bazel build //main:hello-world
+        
