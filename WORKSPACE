@@ -353,7 +353,7 @@ new_local_repository(
 new_local_repository(
     name = "windows_opencv",
     build_file = "@//third_party:opencv_windows.BUILD",
-    path = "E:\\projects\\pragma\\deps\\opencv_mediapipe\\build",
+    path = "C:\\opencv\\build",
 )
 
 http_archive(
