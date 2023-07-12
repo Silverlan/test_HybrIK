@@ -39,8 +39,8 @@ jobs:
           
       - name: Get Python executable location
         run: |
-          git clone https://github.com/bazelbuild/examples
-          bazel --version
+          #git clone https://github.com/bazelbuild/examples
+          #bazel --version
           
           git clone https://github.com/redsun82/bazel.git
           cd bazel
