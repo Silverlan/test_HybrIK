@@ -44,6 +44,9 @@ jobs:
           mv bazel-vs2022.exe bazel.exe
           echo "$(pwd)" >> $GITHUB_PATH
           echo "$(pwd)\bazel.exe" >> $GITHUB_PATH
+          
+      - name: Get Python executable location2
+        run: |
           mkdir test
           cd test
           bazel --version
