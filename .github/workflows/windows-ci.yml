@@ -43,4 +43,5 @@ jobs:
           bazel --version
           cd examples
           cd cpp-tutorial/stage1
+          export BAZEL_VC="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC"
           bazel build //main:hello-world
